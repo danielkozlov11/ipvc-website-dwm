@@ -5,7 +5,7 @@ body{
 .header{
     position: fixed;
     border-left: 0px;
-    width: 100%;
+    width: 1170px;
     height: 10%;
     background-color:#122F51 ;
 }
