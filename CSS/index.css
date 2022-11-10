@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Harmattan";
 }
 .menu {
   border: 1px solid black;
@@ -20,6 +21,7 @@ body {
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: white;
+  display: flex;
 }
 
 .logo {
@@ -53,4 +55,50 @@ body {
   bottom: 0;
   height: 100px;
   border: 1px solid blue;
+}
+
+.btn{
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+a{
+  padding: 0px 50px;
+  border: 1px solid black;
+  text-decoration: none;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  overflow: hidden;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+a:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.img{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
