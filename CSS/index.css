@@ -39,7 +39,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 5em;
 }
 
 .content{
@@ -47,7 +46,6 @@ body {
   width: 50%;
   border: 1px solid red;
   height: 500px;
-  text-align: center;
 }
 
 .scroll{
@@ -106,4 +104,23 @@ a:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-cen
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+}
+
+.waviy {
+  height: auto;
+  border: 1px solid black;
+ 
+}
+.waviy span {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
 }
