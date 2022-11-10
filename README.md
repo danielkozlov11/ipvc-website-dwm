@@ -8,12 +8,12 @@ Criar um website long scroll sobre o curso CTeSP Desenvolvimento Web e Multiméd
 
 O website terá 6 secções, as quais constituem o menu de navegação, organizadas do seguinte modo: 
     - Header (slider com imagens de apresentação do curso),
-    - Apresentação do curso,
-    - Condições de acesso,
-    - Saídas profissionais (Lucas Lopes),
-    - Plano Curricular (Lucas Lopes),
-    - Portfólio (Projectos e Protocolos estágio),
-    - Footer (Contactos).
+    - Apresentação do curso (Daniel Kozlov) - Branch apresentacao,
+    - Condições de acesso (Daniel Kozlov) - Branch condicoes,
+    - Saídas profissionais (Lucas Lopes) - Branch saidas,
+    - Plano Curricular (Lucas Lopes) - Branch plano,
+    - Portfólio (Projectos e Protocolos estágio) (Rafael Barros) - Branch portfolio,
+    - Footer (Contactos) (Rafael Barros) - Branch footer.
 
 Nota: O site deve estar optimizado para 1920x1080 pixel (usar uma largura de área útil para os conteúdos de
 1170px, centrada na janela) podendo ser extensível para uma resolução superior desde que não
