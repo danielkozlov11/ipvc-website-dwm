@@ -64,6 +64,7 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+ 
 }
 
 a{
@@ -73,9 +74,12 @@ a{
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   overflow: hidden;
+  color: black;
+  font-size: 20px;
 }
 
 a:before {
+  text-decoration: none;
   content: "";
   position: absolute;
   z-index: -1;
@@ -92,6 +96,7 @@ a:before {
   transition-timing-function: ease-out;
 }
 a:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  text-decoration: none;
   left: 0;
   right: 0;
 }
