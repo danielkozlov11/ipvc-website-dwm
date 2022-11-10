@@ -10,8 +10,8 @@ O website terá 6 secções, as quais constituem o menu de navegação, organiza
     - Header (slider com imagens de apresentação do curso),
     - Apresentação do curso,
     - Condições de acesso,
-    - Saídas profissionais,
-    - Plano Curricular,
+    - Saídas profissionais (Lucas Lopes),
+    - Plano Curricular (Lucas Lopes),
     - Portfólio (Projectos e Protocolos estágio),
     - Footer (Contactos).
 
