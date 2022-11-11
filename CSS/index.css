@@ -58,13 +58,19 @@ body {
   height: 100%;
 }
 
+.top-page{
+  width: 1170px;
+  height: auto;
+  margin: auto;
+}
+
 .logo {
   position:fixed;
-  margin-left: 14.8%;
   width: 1170px;
   border: 1px solid black;
   text-align: center;
   background-color: white;
+  height: 130px;
 }
 
 scroll-page {
@@ -75,7 +81,7 @@ scroll-page {
 }
 
 .content {
-  margin: auto;
+  margin-top: 20px;
   width: 1170px;
   border: 1px solid red;
   height: 500px;
