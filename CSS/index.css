@@ -124,3 +124,8 @@ a:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-cen
     transform: rotateY(360deg) 
   }
 }
+
+.p{
+  margin-left: 15px;
+  font-size:20px;
+}
