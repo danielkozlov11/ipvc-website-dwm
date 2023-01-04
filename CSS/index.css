@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 
+/* ----------------------------------------- Variables ------------------------------------------------------ */
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,10 +14,44 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Harmattan";
+  overflow: hidden;  /* Remove scroll bar */
 }
 
+/* ----------------------------------------- End Variables ------------------------------------------------------ */
+
+/* ----------------------------------------- Header ------------------------------------------------------ */
+.logo {
+  position:fixed;
+  width: 1170px;
+  text-align: center;
+  background-color: white;
+  height: 80px;
+  /* border: 1px solid black; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.top-page{
+  width: 1170px;
+  height: auto;
+  margin: auto;
+}
+
+.logoImg{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px 60px 20px 60px;
+  cursor: pointer;
+}
+/* ----------------------------------------- End Header ------------------------------------------------------ */
+
+
+/* ----------------------------------------- Menu ------------------------------------------------------ */
 .menu {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   bottom: 0;
   position: fixed;
@@ -27,6 +63,7 @@ body {
   border-radius: 20px;
   background-color: white;
   display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu .curso {
@@ -59,48 +96,6 @@ body {
   height: 100%;
 }
 
-.top-page{
-  width: 1170px;
-  height: auto;
-  margin: auto;
-}
-
-.logo {
-  position:fixed;
-  width: 1170px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: white;
-  height: 130px;
-}
-
-scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.content {
-  margin-top: 20px;
-  width: 1170px;
-  border: 1px solid red;
-  height: 450px;
-}
-
-.scroll {
-  margin: auto;
-  bottom: 0;
-  position: fixed;
-  width: 50%;
-  height: 100px;
-  left: 25%;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  background-color: white;
-  display: flex;
-}
-
 .btn {
   margin-left: 50px;
   margin-right: 20px;
@@ -124,6 +119,38 @@ scroll-page {
   text-align: center;
 }
 
+.p{
+  margin-left: 15px;
+  font-size:20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* ----------------------------------------- End Menu ------------------------------------------------------ */
+
+/* ----------------------------------------- Content ------------------------------------------------------ */
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content {
+  margin-top: 20px;
+  width: 1170px;
+  /* border: 1px solid red; */
+  margin: auto;
+  height: 70%;
+  margin-bottom: 12%;
+}
+/* ----------------------------------------- End Content ------------------------------------------------------ */
+
+/* ----------------------------------------- Animations ------------------------------------------------------ */
 .waviy {
   height: auto;
 }
@@ -144,13 +171,5 @@ scroll-page {
   }
 }
 
-.p{
-  margin-left: 15px;
-  font-size:20px;
-}
 
-a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
+/* ----------------------------------------- End Animations ---------------------------------------------------- */
