@@ -1,6 +1,9 @@
+/* ----------------------------------------- Imports ------------------------------------------------------ */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
+/* ----------------------------------------- Variables ------------------------------------------------------ */
 html {
   scroll-behavior: smooth;
 }
@@ -9,8 +12,25 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Harmattan";
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
+/* ----------------------------------------- Header ------------------------------------------------------ */
+
+.logo {
+  position: fixed;
+  left: 25%;
+  margin: 0 auto;
+  width: 50%;
+  /* border: 1px solid black; */
+  text-align: center;
+  background-color: white;
+}
+
+/* ----------------------------------------- End Header ------------------------------------------------------ */
+
+/* ----------------------------------------- Menu ------------------------------------------------------ */
+
 .menu {
   border: 1px solid black;
   margin: auto;
@@ -25,36 +45,6 @@ body {
   display: flex;
 }
 
-.logo {
-  position: fixed;
-  left: 25%;
-  margin: 0 auto;
-  width: 50%;
-  /* border: 1px solid black; */
-  text-align: center;
-  background-color: white;
-}
-
- scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.content{
-  margin: auto;
-  width: 50%;
-  border: 1px solid red;
-  height: 500px;
-}
-
-.scroll{
-  margin: auto;
-  bottom: 0;
-  height: 100px;
-  border: 1px solid blue;
-}
 
 .btn{
   margin-left: 20px;
@@ -107,6 +97,68 @@ a:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-cen
   text-align: center;
 }
 
+/* ----------------------------------------- End Menu ------------------------------------------------------ */
+
+/* ----------------------------------------- Content ------------------------------------------------------- */
+
+ scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content{
+  margin: auto;
+  width: 50%;
+  border: 1px solid red;
+  height: 500px;
+}
+
+.scroll{
+  margin: auto;
+  bottom: 0;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+/* ----------------------------------------- End Content ------------------------------------------------------ */
+
+
+/* ----------------------------------------- Apresentação ----------------------------------------------------- */
+
+/* ----------------------------------------- Slider ----------------------------------------------------------- */
+.slider {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.slider > div {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider > div.slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* ----------------------------------------- End Slider ------------------------------------------------------- */
+
+
+
+/* ----------------------------------------- End Apresentação -------------------------------------------------- */
 .waviy {
   height: auto;
   border: 1px solid black;
