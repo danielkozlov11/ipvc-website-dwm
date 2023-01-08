@@ -151,8 +151,15 @@ scroll-page {
 
 .main-content{
   font-size: 20px;
-  margin-top: 70px;
+  margin-top: 25px;
 }
+
+.plano {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* ----------------------------------------- End Content ------------------------------------------------------ */
 
 /* ----------------------------------------- Animations ------------------------------------------------------ */
