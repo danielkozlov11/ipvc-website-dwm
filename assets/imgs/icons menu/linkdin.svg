@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#010202;}
-	.st1{fill:#020203;}
-	.st2{fill:#FFFFFF;}
-	.st3{font-family:'Harmattan-Regular';}
-	.st4{font-size:88.9822px;}
+	.st0{fill:#030304;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:27.8359px;}
 </style>
 <g>
 	<g>
-		<path class="st0" d="M222.01,442.08c-6.59,0-11.95-5.36-11.95-11.95V301.59c0-6.59,5.36-11.95,11.95-11.95h128.54
-			c6.59,0,11.95,5.36,11.95,11.95v128.54c0,6.59-5.36,11.95-11.95,11.95H222.01z"/>
-		<path class="st1" d="M350.55,290.14c6.32,0,11.45,5.14,11.45,11.45v128.54c0,6.32-5.14,11.45-11.45,11.45H222.01
-			c-6.32,0-11.45-5.14-11.45-11.45V301.59c0-6.32,5.14-11.45,11.45-11.45H350.55 M350.55,289.14H222.01
-			c-6.88,0-12.45,5.58-12.45,12.45v128.54c0,6.88,5.58,12.45,12.45,12.45h128.54c6.88,0,12.45-5.58,12.45-12.45V301.59
-			C363,294.71,357.42,289.14,350.55,289.14L350.55,289.14z"/>
+		<path class="st0" d="M3.89,47.84c-2.06,0-3.74-1.68-3.74-3.74V3.89c0-2.06,1.68-3.74,3.74-3.74h40.21c2.06,0,3.74,1.68,3.74,3.74
+			v40.21c0,2.06-1.68,3.74-3.74,3.74L3.89,47.84L3.89,47.84z"/>
+		<path class="st0" d="M44.11,0.31c1.98,0,3.58,1.61,3.58,3.58v40.21c0,1.98-1.61,3.58-3.58,3.58H3.89c-1.98,0-3.58-1.61-3.58-3.58
+			V3.89c0-1.98,1.61-3.58,3.58-3.58L44.11,0.31 M44.11,0H3.89C1.74,0,0,1.75,0,3.89v40.21C0,46.26,1.75,48,3.89,48h40.21
+			c2.15,0,3.89-1.75,3.89-3.89V3.89C48,1.74,46.25,0,44.11,0L44.11,0z"/>
 	</g>
-	<text transform="matrix(1.0061 0 0 1 256.8066 381.3857)" class="st2 st3 st4">in</text>
+	<text transform="matrix(1.0061 0 0 1 14.7803 28.8574)" class="st1 st2 st3">in</text>
 </g>
 </svg>
