@@ -152,37 +152,44 @@
                     </div>
                     <div class="slider">
                         <div class="main-content">
-                            <center> <h1> 1º Ano </h1> </center>
-                            <div class="planoc">
-                                <div class="semestre">
-                                  <h2> 1º Semestre </h2>
-                                  <ul>
-                                    <li> Design Web e Multimédia</li>
-                                    <li> Introdução à Programação</li>
-                                    <li> Sistemas Operativos de Redes e Computadores</li>
-                                    <li> Técnicas de Expressão Oral e Escrita</li>
-                                    <li> Tópicos de Matemática</li>
-                                    <li> Modelação 3D</li>
-                                  </ul>
+                           
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <!-- Full-width slides/quotes -->
+                                <div class="mySlides">
+                                    <center> <h1> 1º Ano </h1> </center>
+                                    <div class="semestre">
+                                        <h2> 1º Semestre </h2>
+                                        <ul>
+                                          <li> Design Web e Multimédia</li>
+                                          <li> Introdução à Programação</li>
+                                          <li> Sistemas Operativos de Redes e Computadores</li>
+                                          <li> Técnicas de Expressão Oral e Escrita</li>
+                                          <li> Tópicos de Matemática</li>
+                                          <li> Modelação 3D</li>
+                                        </ul>
+                                      </div>
+                                      <div class="semestre">
+                                        <h2> 2º Semestre </h2>
+                                        <ul>
+                                          <li> Bases de Dados</li>
+                                          <li> Desenvolvimento e Gestão de Conteúdos Web</li>
+                                          <li> Documentação Técnica</li>
+                                          <li> Gestão de Projetos</li>
+                                          <li> Produçaõ Audiovisual</li>
+                                          <li> Sistemas Multimédia Interativos</li>
+                                        </ul>
+                                      </div>
                                 </div>
-                                <div class="semestre">
-                                  <h2> 2º Semestre </h2>
-                                  <ul>
-                                    <li> Bases de Dados</li>
-                                    <li> Desenvolvimento e Gestão de Conteúdos Web</li>
-                                    <li> Documentação Técnica</li>
-                                    <li> Gestão de Projetos</li>
-                                    <li> Produçaõ Audiovisual</li>
-                                    <li> Sistemas Multimédia Interativos</li>
-                                  </ul>
-                                </div>
-                                <div class="row">
-                                 <img src="assets/imgs/seta_slide.png" width="48px" height="48px">
-                                  </div>
-                              </div>
+                                    
+                                      
+                                     <!-- Next/prev buttons -->
+                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                            </div> 
                         </div>
                     </div>
-                </div>
             </scroll-page>
             <scroll-page id="page-6">
                 <div class="content">
@@ -202,6 +209,8 @@
                         <img src="assets/imgs/portfolio/print_java.png" alt="Foto 2">
                         <img src="assets/imgs/portfolio/print_ubuntu.png" alt="Foto 3">
                         <img src="assets/imgs/portfolio/print_blender2.png" alt="Foto 4">
+                        <img src="assets/imgs/portfolio/print_blender3.png" alt="Foto ">
+
                       </div>
                 </div>
             </scroll-page>
@@ -280,5 +289,33 @@
         </div>
         <script src="js/script.js"></script>
 </body>
+<script>
 
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 </html>
