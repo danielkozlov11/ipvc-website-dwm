@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Harmattan";
-  overflow: hidden;  /* Remove scroll bar */
+  overflow: hidden;  /*Remove scroll bar */
 }
 
 /* ----------------------------------------- End Variables ------------------------------------------------------ */
@@ -46,6 +46,7 @@ body {
   margin-top: 20px;
   padding: 20px 60px 20px 60px;
   cursor: pointer;
+  background-color: white;
 }
 /* ----------------------------------------- End Header ------------------------------------------------------ */
 
@@ -115,7 +116,7 @@ body {
 .img {
   margin-left: 35%;
   width: 30%;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-right: 20px;
   text-align: center;
 }
@@ -124,6 +125,7 @@ body {
   width: auto;
   height: auto;
   text-align: center;
+  margin-top: 5px;
 }
 
 .p{
