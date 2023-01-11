@@ -272,6 +272,17 @@ video {
   text-align: center;
 }
 
+.main-slide{
+  margin: auto;
+}
+
+.mySlidess {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   justify-content:none;

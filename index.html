@@ -20,11 +20,12 @@
         <main>
             <scroll-page id="page-1">
                 <div class="content">
-                    <div class="slider">
-                        <div class="slide">Slide 1</div>
-                        <div class="slide">Slide 2</div>
-                        <div class="slide">Slide 3</div>
-                    </div>
+                    <div class="main-slide" style="max-width:60%">
+                        <br><br>
+                        <img class="mySlidess" src="/assets/imgs/apresentacao/1.jpg" style="width:100%">
+                        <img class="mySlidess" src="/assets/imgs/apresentacao/2.jpg" style="width:100%">
+                        <img class="mySlidess" src="/assets/imgs/apresentacao/3.jpg" style="width:100%">
+                      </div>
                 </div>
             </scroll-page>
             <scroll-page id="page-2">
@@ -359,4 +360,21 @@ function showSlides(n) { //função que vai mostrar as imagens
   dots[slideIndex-1].className += " active";  //esconde
 }
     </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlidess");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
 </html>
