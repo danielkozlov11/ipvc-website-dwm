@@ -332,31 +332,31 @@
 </body>
 <script>
 
-    var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1; //variavel que vai guardar o indice da imagem
+showSlides(slideIndex); //chama a função showSlides e passa o indice da imagem
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n) { //função que vai avançar ou retroceder as imagens
+  showSlides(slideIndex += n); //chama a função showSlides e passa o indice da imagem
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n) { //função que vai mostrar a imagem que foi clicada
+  showSlides(slideIndex = n); //chama a função showSlides e passa o indice da imagem
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+function showSlides(n) { //função que vai mostrar as imagens
+  var i; //variavel que vai guardar o indice da imagem
+  var slides = document.getElementsByClassName("mySlides"); //variavel que vai guardar as imagens
+  var dots = document.getElementsByClassName("dot"); //variavel que vai guardar os pontos
+  if (n > slides.length) {slideIndex = 1} //se o indice da imagem for maior que o numero de imagens, o indice da imagem volta a ser 1
+    if (n < 1) {slideIndex = slides.length} //se o indice da imagem for menor que 1, o indice da imagem volta a ser o numero de imagens
+    for (i = 0; i < slides.length; i++) { //percorre as imagens
+      slides[i].style.display = "none"; //esconde as imagens
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < dots.length; i++) { //percorre os pontos
+      dots[i].className = dots[i].className.replace(" active", ""); //esconde os pontos
     }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex-1].style.display = "block"; //mostra a imagem
+  dots[slideIndex-1].className += " active";  //esconde
 }
     </script>
 </html>
