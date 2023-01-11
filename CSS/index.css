@@ -228,7 +228,7 @@ video {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
@@ -347,6 +347,9 @@ q {font-style: italic;}
 .author {color: cornflowerblue;}
 
 /* ----------------------------------------- End Slide ---------------------------------------------------- */
+
+/* ----------------------------------------- Pop Up ------------------------------------------------------ */
+
 .center{
   position: fixed;
   top: 50%;
@@ -405,3 +408,4 @@ q {font-style: italic;}
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 5px 6px 2px 6px;
 }
+/* ----------------------------------------- End Pop up ---------------------------------------------------- */
