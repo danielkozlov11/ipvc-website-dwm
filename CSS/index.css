@@ -15,14 +15,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Harmattan";
-  overflow: hidden;  /*Remove scroll bar */
+  overflow: hidden;
+  /*Remove scroll bar */
 }
 
 /* ----------------------------------------- End Variables ------------------------------------------------------ */
 
 /* ----------------------------------------- Header ------------------------------------------------------ */
 .logo {
-  position:fixed;
+  position: fixed;
   width: 1170px;
   text-align: center;
   background-color: white;
@@ -34,13 +35,13 @@ body {
   margin: auto;
 }
 
-.top-page{
+.top-page {
   width: 1170px;
   height: auto;
   margin: auto;
 }
 
-.logoImg{
+.logoImg {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   margin-top: 20px;
@@ -48,9 +49,125 @@ body {
   cursor: pointer;
   background-color: white;
 }
+
 /* ----------------------------------------- End Header ------------------------------------------------------ */
 
+/* ----------------------------------------- Slide ------------------------------------------------------ */
 
+/* Slideshow container */
+.slideshow-container {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #f1f1f1f1;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+/* Slides */
+.mySlides {
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-slide {
+  margin: auto;
+}
+
+.mySlidess {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  justify-content: none;
+  align-items: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+li {
+  list-style: none;
+}
+
+.semestre {
+  float: left;
+  margin: auto;
+
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+/* ----------------------------------------- End Slide ---------------------------------------------------- */
 /* ----------------------------------------- Menu ------------------------------------------------------ */
 .menu {
   /* border: 1px solid black; */
@@ -128,12 +245,12 @@ body {
   margin-top: 5px;
 }
 
-.p{
+.p {
   margin-left: 15px;
-  font-size:20px;
+  font-size: 20px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -158,7 +275,7 @@ scroll-page {
   margin-bottom: 12%;
 }
 
-.main-content{
+.main-content {
   font-size: 20px;
   margin-top: 25px;
 }
@@ -190,41 +307,19 @@ scroll-page {
 
 /* ----------------------------------------- End Content ------------------------------------------------------ */
 
-/* ----------------------------------------- Animations ------------------------------------------------------ */
-.waviy {
-  height: auto;
-}
-
-.waviy span {
-  display: inline-block;
-  font-size: 20px;
-  color: black;
-  text-transform: uppercase;
-  animation: flip 7s infinite;
-  animation-delay: calc(.4s * var(--i))
-}
-
-@keyframes flip {
-  0%,
-  80% {
-    transform: rotateY(360deg)
-  }
-}
-
-
-/* ----------------------------------------- End Animations ---------------------------------------------------- */
-
 /* ----------------------------------------- Video ------------------------------------------------------ */
 
 video {
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
 }
+
 /* ----------------------------------------- End Video ---------------------------------------------------- */
 
 /* ----------------------------------------- Galeria ------------------------------------------------------ */
 #gallery {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -251,124 +346,74 @@ video {
   border: 1px solid #333;
   box-shadow: 4px 4px 20px #333;
 }
+
 /* ----------------------------------------- End Galeria ---------------------------------------------------- */
 
-/* ----------------------------------------- Slide ------------------------------------------------------ */
+/* ----------------------------------------- Modal ------------------------------------------------------ */
 
-/* Slideshow container */
-.slideshow-container {
-  justify-content: center;
-    align-items: center;
-  position: relative;
-  background: #f1f1f1f1;
-    display: flex;
-
-}
-
-/* Slides */
-.mySlides {
-  color: black;
-  padding: 80px;
-  text-align: center;
-}
-
-.main-slide{
-  margin: auto;
-}
-
-.mySlidess {
+/* The Modal (background) */
+.modal {
   display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  justify-content:none;
-  align-items: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.prev{
-  position: absolute;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 200px;
+  /* Location of the box */
   left: 0;
-}
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
+/* Modal Content */
+.modal-content {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: auto;
   padding: 20px;
-  background: #ddd;
+  border: 1px solid #888;
+  width: 50%;
+  height: 42%;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
-li{
-  list-style: none;
-}
-
-.semestre{
-  float: left;
-  margin:auto;
-  
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-
-/* ----------------------------------------- End Slide ---------------------------------------------------- */
+/* ----------------------------------------- End Modal ---------------------------------------------------- */
 
 /* ----------------------------------------- Pop Up ------------------------------------------------------ */
 
-.center{
+.center {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.center a{
+.center a {
   padding: 10px 20px;
   background: rgb(255, 255, 255);
   color: rgb(13, 13, 13);
@@ -378,20 +423,21 @@ q {font-style: italic;}
   border-radius: 5px;
 }
 
-#popup{
+#popup {
+  z-index: 1;
   position: fixed;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0, 0, 0, 0.75);
   display: none;
 }
 
-#popup .popup-content{
+#popup .popup-content {
   position: fixed;
   top: 40%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
   padding: 10px 20px;
@@ -400,7 +446,7 @@ q {font-style: italic;}
   border-radius: 20px;
 }
 
-#popup a.close-popup{
+#popup a.close-popup {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -408,15 +454,44 @@ q {font-style: italic;}
   text-decoration: none;
 }
 
-#popup:target{
+#popup:target {
   display: block;
 }
 
-.information:hover{
+.information:hover {
   background-color: black;
   color: white;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 5px 6px 2px 6px;
 }
+
 /* ----------------------------------------- End Pop up ---------------------------------------------------- */
+
+/* ----------------------------------------- Form ------------------------------------------------------ */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0063a9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #074C7D;
+}
+/* ----------------------------------------- End Form ---------------------------------------------------- */
